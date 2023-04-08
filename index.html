@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<!--  DATA Placeholder
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+  -->
+<body>
+  <div class="mainBody"> 
+    <div class="linear">
+      <img src="./images/bg-main-desktop.png" alt="homeImg">
+      
+      <div class="floatingCard">
+        <div class="card card1">
+          <img src="./images/bg-card-front.png" alt="frontCard">
+          <div id="shape"></div>
+
+          <div class="informationBox">
+            <div class="serialNumber">
+              <h1 id="serialValue">0000 0000 0000 0000</h1>
+            </div>
+            
+            <div class="information">
+              <h3 id="nameDisplay">Jane Appleseed</h3>
+              <nav>
+                <h3 id="monthDisplay">00</h3>
+                <h3 id="yearDisplay">00</h3>
+              </nav>
+              
+            </div>
+          </div>
+          </div>
+          
+      
+        <div class="card card2">
+        <img src="./images/bg-card-back.png" alt="backCard">
+          <h3 id="cvcDisplay">000</h3>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+    <form name="inputForm" action="">
+      <label for="">Cardholder Name</label>
+      <input type="text" placeholder="e.g. Jane Appleseed" class="inputFormat oneLineInput" id="nameInput">
+      <label for="">Card Number</label>
+      <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="inputFormat oneLineInput" id="cardNumberInput">
+      <nav class="cardDetailsLabel">
+       
+        <label for="">Exp. Date (MM/YY)</label>
+        <label for="">CVC</label>
+       
+      </nav>
+      <nav class="cardDetails">
+        <div class="dateYear">
+          <input type="text" placeholder="MM" class="inputFormat" id="month" required>
+          <input type="text" placeholder="YY" class="inputFormat" id="year" required>
+        </div>
+        
+        <input type="text" placeholder="e.g. 123" class="inputFormat cvcInput" id="cvcInput" required>
+      </nav>
+      <button type="submit" class="submitFormat oneLineInput">Confirm</button>
+    </form>
+    </div>  
+    
+  </div>
+
+
+<script src="./index.js"></script>
+  <!-- Completed state start -->
+
+  
+</body>
+</html>

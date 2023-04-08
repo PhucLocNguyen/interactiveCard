@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainBody{
+display: flex;
+
+}
+.linear{
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    
+}
+.linear >img{
+  
+    height: 100vh;
+    width: 100%;
+
+}
+.container{
+    flex: 2;
+}
+.floatingCard{
+    position: absolute;
+    top: 20%;
+    right: -20%;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+  
+}
+.serialNumber{
+
+}
+.card >img{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #333;
+}
+.floatingCard > .card1{
+    margin-bottom: 40px;
+   
+}
+.card{
+    position: relative;
+}
+.informationBox{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+.informationBox >.serialNumber{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.informationBox >.information{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.floatingCard > .card2{
+margin-left: 20%;
+position: relative;
+
+}
+.floatingCard .card1 img{
+    position: relative;
+}
+
+.floatingCard .card2 img{
+        position: relative;
+}
+
+/*Information on the card*/
+#shape{
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+}
+#shape::after{
+    content: "";
+    position: absolute;
+    right: -70%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:center ;
+}
+.container >form{
+   
+   /* set the width of the form */
+    margin: auto auto; /* set the horizontal margin to auto */
+    background-color:#fff ;
+    padding: 50px 50px;
+    
+}
+form label{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: hsl(278, 68%, 11%);
+}
+.inputFormat{
+    padding: 10px 20px;
+   
+    border: 1px solid hsl(279, 6%, 55%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input:required::before{
+    content: "*";
+    position: absolute;
+    
+  
+
+}
+.oneLineInput{
+    width: 100%;
+    
+}
+.cardDetailsLabel{
+    display: flex;
+   gap: 85px;
+   
+}
+.cardDetailsLabel>label{
+    margin-right: 10px;
+
+}
+.cardDetails{
+    display: flex;
+    margin-bottom: 30px;
+   
+}
+.dateYear{
+    flex: 1;
+    display: flex;
+}
+.dateYear input{
+    width: 100px;
+    margin-right: 20px;
+}
+.information nav{
+    display: flex;
+}
+.information nav h3:first-child::after{
+    content: "/";
+position: absolute;
+
+}
+.information nav h3:first-child{
+    margin-right: 5px;
+}
+.cardDetails .cvcInput{
+    flex: 1;
+}
+#cvcDisplay{
+    position: absolute;
+    bottom: 50%;
+    font-size: 32px;
+    transform: translateY(40%);
+    right: -10%;
+    color: #fff;
+}
+.submitFormat{
+    padding: 15px 20px;
+   
+    border: 1px solid hsl(279, 6%, 55%);
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color:#fff ;
+}
+.errorInput{
+    border: 1px solid red;
+    position: relative;
+}
