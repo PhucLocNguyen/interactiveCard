@@ -125,7 +125,7 @@ form label{
    
     border: 1px solid hsl(279, 6%, 55%);
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 input:required::before{
     content: "*";
@@ -141,6 +141,7 @@ input:required::before{
 .cardDetailsLabel{
     display: flex;
    gap: 85px;
+   margin-top: 15px;
    
 }
 .cardDetailsLabel>label{
@@ -193,4 +194,15 @@ position: absolute;
 .errorInput{
     border: 1px solid red;
     position: relative;
+}
+.errorFormat{
+    display: none;
+    color: red;
+    
+}
+.check1 .errorFormat{
+    display: block;
+}
+button:active{
+    background-color: hsl(278, 94%, 30%);
 }

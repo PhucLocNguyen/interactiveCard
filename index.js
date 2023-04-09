@@ -13,8 +13,12 @@ const newArr = new String(value);
 
 if(test === -1 && newArr.length <=16 ){
         reloadValue.classList.remove("errorInput");
+        document.getElementById("inputForm_div2").classList.remove("check1");
 }
-    else reloadValue.classList.add("errorInput");  
+    else {
+      document.getElementById("inputForm_div2").classList.add("check1");
+      reloadValue.classList.add("errorInput");
+  }  
     value = value.slice(0,4)+" "+value.slice(4,8) +" "+ value.slice(8,12)+" "+value.slice(12,16);
 
     document.getElementById("serialValue").innerHTML = `${value}`;
@@ -31,8 +35,12 @@ function getName(){
   
      if(test === -1 ){
         reloadValue.classList.remove("errorInput");
+        document.getElementById("inputForm_div1").classList.remove("check1");
     }
-    else reloadValue.classList.add("errorInput");   
+    else {
+      reloadValue.classList.add("errorInput");
+      document.getElementById("inputForm_div1").classList.add("check1");
+  };   
     document.getElementById("nameDisplay").innerHTML = `${value}`;
     
  
