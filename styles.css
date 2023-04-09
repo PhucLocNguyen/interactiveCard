@@ -265,6 +265,9 @@ button:active{
         left: 30px;
         
         }
+        #nameDisplay{
+            text-transform: uppercase;
+        }
         #cvcDisplay{
             position: absolute;
             bottom: 50%;
