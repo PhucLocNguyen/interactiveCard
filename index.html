@@ -72,7 +72,7 @@
     </div>
 
     <div class="container">
-    <form name="inputForm" action="">
+    <form name="inputForm" action="" id="formSubmission">
       
      <div id="inputForm_div1">
       <label for="" class="cardDetailsLabel"> Cardholder Name</label>
@@ -100,8 +100,17 @@
         
         <input type="text" placeholder="e.g. 123" class="inputFormat cvcInput" id="cvcInput" required>
       </nav>
-      <button type="submit" class="submitFormat oneLineInput">Confirm</button>
+      <button type="submit" class="submitFormat oneLineInput" id="btnSubmit">Confirm</button>
+    
     </form>
+     
+      <div id="processContainer">
+        <svg width="80" height="80" id="circleComplete" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+        <h3 class="processContainer_Header--format">Thank You!</h3>
+        <p class="processContainer_description--format">We've added your card details</p>
+        <button type="submit" class="submitFormat oneLineInput" style="max-width: 500px;">Continue</button>
+      
+      </div>
     </div>  
     
   </div>

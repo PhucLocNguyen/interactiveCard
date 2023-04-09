@@ -3,7 +3,7 @@ let number, value, arrLength, i, indexClean,tmp, cleanArrLength, count =0;
 const cleanArr = [], cleanName = [];
 
 document.getElementById("cardNumberInput").addEventListener("keyup", getNumber);
-
+document.getElementById("processContainer").classList.add("displayNone");
 function getNumber(){
 let count = 0;
   let reloadValue =  document.getElementById("cardNumberInput");
@@ -92,3 +92,11 @@ function getNumberCVC(){
 
   document.getElementById("cvcDisplay").innerHTML = `${value}`;
 }   
+document.getElementById("formSubmission").addEventListener("submit", (event) => {
+  event.preventDefault();
+  successReport();
+});
+function successReport(){
+  document.getElementById("formSubmission").classList.add("displayNone");
+  document.getElementById("processContainer").classList.remove("displayNone");
+}
